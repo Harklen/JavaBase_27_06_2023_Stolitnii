@@ -10,6 +10,7 @@ public class Main {
         int deposit = 1;
         int withdraw = 2;
         int operat;
+        int limit = 1000;
         Scanner input = new Scanner(System.in);
 
         boolean repeat = true;
@@ -28,28 +29,28 @@ public class Main {
                     int card = input.nextInt() - 1;
                     input.nextLine();
 
-                    System.out.println("Введіть суму депозиту");
+                    System.out.println("Введіть суму депозиту. Ліміт на одну операцію - 1000");
                     int sum = input.nextInt();
                     input.nextLine();
 
-                    if (sum > 0) {
+                    if (sum > 0 && sum <= limit) {
                         cardBalance[card] += sum;
                     } else {
-                        System.out.println("Невірна сума, введіть вірну суму депозиту");
+                        System.out.println("Невірна сума або перевищено ліміт");
                     }
                 } else if (operat == withdraw) {
                     System.out.println("Оберіть карту від 1 до 10");
                     int card = input.nextInt() - 1;
                     input.nextLine();
 
-                    System.out.println("Введіть суму яку хочете зняти");
+                    System.out.println("Введіть суму яку хочете зняти. Ліміт на одну операцію - 1000");
                     int sum = input.nextInt();
                     input.nextLine();
 
-                    if (sum <= cardBalance[card]) {
+                    if (sum <= cardBalance[card] && sum <= limit && cardBalance[card] > 0) {
                         cardBalance[card] -= sum;
                     } else {
-                        System.out.println("У вас недостатньо коштів для зняття готівки");
+                        System.out.println("Невірна сума або перевищено ліміт");
                         cardBalance[card] = 0;
                     }
                 }
@@ -57,7 +58,7 @@ public class Main {
                 System.out.println("Стан рахунків:");
                 printCardBalances(cardBalance);
 
-                System.out.println("Бажаєте продовжити? 1 - Так, 2 - Ні");
+                System.out.println("Бажаєте продовжити? 1 - Так, Інше - завершити роботу");
                 int choice = input.nextInt();
                 input.nextLine();
                 repeat = (choice == 1);
