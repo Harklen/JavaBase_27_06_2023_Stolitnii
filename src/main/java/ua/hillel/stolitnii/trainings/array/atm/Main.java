@@ -47,7 +47,7 @@ public class Main {
                     int sum = input.nextInt();
                     input.nextLine();
 
-                    if (sum <= cardBalance[card] && sum <= limit && cardBalance[card] > 0) {
+                    if (sum <= cardBalance[card] && sum <= limit && cardBalance[card] > 0 && sum > 0) {
                         cardBalance[card] -= sum;
                     } else {
                         System.out.println("Невірна сума або перевищено ліміт");
