@@ -22,7 +22,7 @@ public class Main {
                     System.out.println("Число повинно бути додатнім!");
                 }
             } else {
-                String invalidInput = scanner.next();
+                String invalidInput = scanner.nextLine();
                 System.out.println("Введено неправильне значення: " + invalidInput);
             }
         }
