@@ -22,7 +22,7 @@ public class Main {
                 }
                 num = scanner.nextInt();
                 if (num < 0 || num > 9) {
-                    System.out.println("Помилка! Число має бути від 0 до 9.");
+                    System.out.println("Помилка! Число має бути від 0 до 9!");
                 }
             } while (num < 0 || num > 9);
             second[i] = num;
