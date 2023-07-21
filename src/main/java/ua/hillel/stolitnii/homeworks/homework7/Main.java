@@ -10,7 +10,7 @@ public class Main {
 
         System.out.print("Вік гравців команди 1: ");
         for (int i = 0; i < numberOfPlayers; i++) {
-            int age = (int) (Math.random() * 23) + 18; // Випадковий вік в діапазоні 18-40
+            int age = (int) (Math.random() * 23) + 18;
             team1[i] = age;
             sumTeam1 += age;
             System.out.print(age + " ");
@@ -20,7 +20,7 @@ public class Main {
 
         System.out.print("\nВік гравців команди 2: ");
         for (int i = 0; i < numberOfPlayers; i++) {
-            int age = (int) (Math.random() * 23) + 18; // Випадковий вік в діапазоні 18-40
+            int age = (int) (Math.random() * 23) + 18;
             team2[i] = age;
             sumTeam2 += age;
             System.out.print(age + " ");
@@ -29,3 +29,5 @@ public class Main {
         System.out.println("\nСередній вік команди 2: " + (double) sumTeam2 / numberOfPlayers);
     }
 }
+
+
