@@ -51,7 +51,7 @@ public class Main {
             while (!scanner.hasNextInt()) {
                 System.out.println("Помилка! Введіть ціле додатнє число.");
                 System.out.print(message);
-                scanner.next();
+                scanner.nextLine();
             }
             value = scanner.nextInt();
         } while (value <= 0);
