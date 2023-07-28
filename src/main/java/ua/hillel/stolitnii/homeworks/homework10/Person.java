@@ -21,12 +21,15 @@ public class Person {
             String lastName = dataList[i][1];
             String city = dataList[i][2];
             String phone = dataList[i][3];
-            personInfo(firstName, lastName, city, phone);
+
+            String formatedString = personInfo(firstName, lastName, city, phone);
+            System.out.println(formatedString);
         }
+
     }
-    public static void personInfo(String firstName, String lastName, String city, String phone) {
+    public static String personInfo(String firstName, String lastName, String city, String phone) {
         String formattedString = String.format("Зателефонувати громадянинові %s %s з міста %s можна за телефоном %s", firstName, lastName, city, phone);
-        System.out.println(formattedString);
+        return formattedString;
     }
 }
 
