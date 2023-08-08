@@ -1,16 +1,16 @@
 package hillel.stolitnii.homeworks.homework12;
 class FitnessTracker {
     private final String firstName;
-    private String lastName;
+    public String lastName;
     private final int dayOfBirth;
     private final int monthOfBirth;
     private final int yearOfBirth;
-    private String email;
+    private final String email;
     private final String phone;
-    private double weight;
-    private String pressure;
-    private int stepsPerDay;
-    private int age;
+    public double weight;
+    public String pressure;
+    public int stepsPerDay;
+    public int age;
     private String getFirstName() {
         return firstName;
     }
@@ -26,10 +26,10 @@ class FitnessTracker {
     private int getYearOfBirth() {
         return yearOfBirth;
     }
-    public String getEmail() {
+    private String getEmail() {
         return email;
     }
-    public String getPhone() {
+    private String getPhone() {
         return phone;
     }
     public double getWeight() {
