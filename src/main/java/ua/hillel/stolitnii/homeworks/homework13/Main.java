@@ -50,7 +50,11 @@ public class Main {
         MusicStyles[] musicBands = {new PopMusic(), new RockMusic(), new ClassicMusic()};
 
         for (MusicStyles band : musicBands) {
-            band.playMusic();
+            if (band != null) {
+                band.playMusic();
+            } else {
+                System.out.println("Групи не існує.");
+            }
         }
     }
 }
