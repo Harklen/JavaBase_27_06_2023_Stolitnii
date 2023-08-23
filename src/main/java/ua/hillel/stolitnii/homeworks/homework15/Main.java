@@ -1,4 +1,4 @@
-package hillel.stolitnii.homeworks.homework15;
+package ua.hillel.stolitnii.homeworks.homework15;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;

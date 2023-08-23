@@ -1,3 +1,5 @@
+package hillel.stolitnii.homeworks.homework7;
+
 public class Main {
     public static void main(String[] args) {
         int numberOfPlayers = 25;
