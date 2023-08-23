@@ -3,7 +3,7 @@ public class Main {
 
     public double calculateAverage(int[] array) {
         if (array == null || array.length == 0) {
-            throw new IllegalArgumentException("Array is empty or null");
+            throw new IllegalArgumentException("Масив пустий або null");
         }
 
         int sum = 0;
@@ -15,7 +15,7 @@ public class Main {
 
     public boolean isSquareMatrix(int[][] matrix) {
         if (matrix == null) {
-            throw new IllegalArgumentException("Matrix is null");
+            throw new IllegalArgumentException("Матриця в null");
         }
 
         int rows = matrix.length;
