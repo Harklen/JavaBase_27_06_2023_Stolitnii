@@ -29,7 +29,7 @@ public class Main {
     }
     private static int[] teamScores(Scanner input, String teamName) {
         int[] scores = new int[5];
-        System.out.print("Введіть кількість фрагів для 5 гравців команди " + teamName + ": ");
+        System.out.print("Введіть кількість фрагів для 5 гравців команди  " + teamName + ": ");
         for (int i = 0; i < 5; i++) {
             try {
                 scores[i] = input.nextInt();
