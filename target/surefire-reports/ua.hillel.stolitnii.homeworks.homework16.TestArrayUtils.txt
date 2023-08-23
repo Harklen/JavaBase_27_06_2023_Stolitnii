@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: ua.hillel.stolitnii.homeworks.homework16.TestArrayUtils
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in ua.hillel.stolitnii.homeworks.homework16.TestArrayUtils
