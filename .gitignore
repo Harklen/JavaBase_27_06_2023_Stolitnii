@@ -2,6 +2,9 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+target/
+!**/src/main/**/target/
+qodana.yaml
 
 ### Eclipse ###
 .apt_generated
