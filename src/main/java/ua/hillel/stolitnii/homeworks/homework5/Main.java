@@ -1,4 +1,4 @@
-package hillel.stolitnii.homeworks.homework5;
+package ua.hillel.stolitnii.homeworks.homework5;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
@@ -17,18 +17,11 @@ public class Main {
         double teamOneAverage = teamAvg(teamOneScores);
         double teamTwoAverage = teamAvg(teamTwoScores);
 
-        String winner;
-        switch (Double.compare(teamOneAverage, teamTwoAverage)) {
-            case 1:
-                winner = teamOneName;
-                break;
-            case -1:
-                winner = teamTwoName;
-                break;
-            default:
-                winner = "Нічия";
-                break;
-        }
+        String winner = switch (Double.compare(teamOneAverage, teamTwoAverage)) {
+            case 1 -> teamOneName;
+            case -1 -> teamTwoName;
+            default -> "Нічия";
+        };
 
         System.out.println("Перемогла команда " + winner + ". " + winner + " набрала " +
                 (winner.equals(teamOneName) ? teamOneAverage : teamTwoAverage) +
